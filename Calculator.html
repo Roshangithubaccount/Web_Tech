@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    body {
+      background-color: #acf0c5;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    h1{
+      text-align: center;
+      margin-right: 50px;
+      
+    }
+
+    .calculator {
+      background-color: #2b2b2b;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 8px 8px 15px rgba(0,0,0,0.5);
+      width: 320px;
+    }
+
+    .display {
+      background-color: #d6da7a;
+      height: 60px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .buttons div {
+      background-color: #5d5d54;
+      color: white;
+      font-size: 1.3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .equal {
+      background-color: #e25444;
+      grid-row: span 2; /* makes the = button taller */
+    }
+    .equal:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <div><h1>CALCULATOR</h1></div>
+  
+  <div class="calculator">
+    <div class="display"></div>
+    <div class="buttons">
+      <div>MC</div>
+      <div>M+</div>
+      <div>÷</div>
+      <div>×</div>
+
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>-</div>
+
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>+</div>
+
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div class="equal">=</div>
+
+      <div>0</div>
+      <div>.</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -5,20 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <style>
+        body{
+            background-color: #cbc2c2;
+        }
         div{
             text-align: center;
+            /* border: 2px solid black; */
+            margin-left: 500px;
+            margin-right: 500px;
+            /* margin-bottom: 5px; */
+            margin-top: 250px;
+            box-shadow: 3px 8px  5px 6px#293f44;
+            background-color: skyblue;
+            border-radius: 20px;
+            padding-top: 40px;
+            padding-bottom: 50px;
         }
         h1{
+            margin-bottom: 30px;
             text-decoration: underline;
         }
+        input{
+            padding: 5px;
+            padding-top: 3px;
+
+        }
+        .u{
+            margin-top: 10px;
+            padding-top: 5px;
+            margin-left: 3px;
+            border-radius: 5px;
+            border: none;
+            background-color: #e4dddd;
+
+        }
+        .p{
+            margin-top: 10px;
+            padding-top: 5px;
+            margin-left: 13px;
+            /* margin-r: px; */
+            border-radius: 5px;
+            border: none;
+            background-color: #e4dddd;
+        }
+        button{
+            margin-top: 20px;
+            background-color: #2c7f94;
+            border: none;
+            padding-bottom: 5px;
+            color: white;
+        }
+        button:hover{            
+            background-color: #934646;
+        }
+       
 
     </style>
 </head>
 <body>
     <div>
         <h1>Login-Page</h1>
-        <h3>Username :</h3>
-        <h3>Password :</h3>
+        <label for="username">user-name :</label>
+        <input class="u" type="text" placeholder="enter user name"><br>
+        <label for="password">password:</label>
+        <input class="p" type="password" placeholder="Password"><br>
         <button onclick="Login()">Login</button>
     </div>
     

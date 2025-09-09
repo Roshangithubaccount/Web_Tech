@@ -1,0 +1,12 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "result.js",
+  "scripts": {
+    "start": "node result.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
